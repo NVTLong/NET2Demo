@@ -1,27 +1,23 @@
-﻿@{
-    ViewData["Title"] = "Giải Phương Trình Bậc 2";
-}
-
 <div class="text-center">
     <h1 class="display-4">Giải Phương Trình Bậc 2</h1>
 </div>
 <div class="row justify-content-center mt-3">
-    <form method="post" class="col-4">
+    <form class="col-4" asp-action="GiaiPhuongTrinhBac2">
         <div class="mb-3">
             <label for="a" class="form-label">Nhập giá trị của a:</label>
-            <input type="number" class="form-control" id="a" name="a" required>
+            <input type="number" class="form-control" name="hesoA" required>
         </div>
       <div class="mb-3">
             <label for="b" class="form-label">Nhập giá trị của b:</label>
-            <input type="number" class="form-control" id="b" name="b" required>
+            <input type="number" class="form-control" name="hesoB" required>
       </div>
        <div class="mb-3">
             <label for="b" class="form-label">Nhập giá trị của c:</label>
-            <input type="number" class="form-control" id="c" name="c" required>
+            <input type="number" class="form-control" name="hesoC" required>
       </div>
       <button type="submit" class="btn btn-primary">Kết quả</button>
     </form>
 </div>
 <div class="text-center">
-    <label><h3 style="color: red">Đáp án: @ViewBag.Result</h3></label>
+    <label><h3 style="color: red">Đáp án: @ViewBag.ThongBaoKetQua</h3></label>
 </div>
