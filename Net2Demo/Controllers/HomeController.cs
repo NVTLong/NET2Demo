@@ -32,8 +32,7 @@ public class HomeController : Controller
         return View("Index");
     }
 
-    [HttpGet]
-    public IActionResult Privacy()
+     public IActionResult Privacy()
     {
         return View();
     }
